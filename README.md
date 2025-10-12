@@ -1,5 +1,8 @@
 # go-billy-desfacer [![GoDoc](https://godoc.org/gopkg.in/jfontan/go-billy-desfacer.v0?status.svg)](https://godoc.org/github.com/jfontan/go-billy-desfacer)[![Build Status](https://travis-ci.com/jfontan/go-billy-desfacer.svg?branch=master)](https://travis-ci.com/jfontan/go-billy-desfacer)[![codecov](https://codecov.io/gh/jfontan/go-billy-desfacer/branch/master/graph/badge.svg)](https://codecov.io/gh/jfontan/go-billy-desfacer)
 
+This is a forked version which implements support for go-billy v6 by matching version numbers
+to support go-billy numbers.
+
 [go-billy](https://github.com/src-d/go-billy) filesystem that wraps [afero](https://github.com/spf13/afero). It lets use afero filesystems with software that expects go-billy, for example with [go-git](https://github.com/src-d/go-git).
 
 
