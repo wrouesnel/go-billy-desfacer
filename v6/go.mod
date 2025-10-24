@@ -7,4 +7,7 @@ require (
 	github.com/spf13/afero v1.15.0
 )
 
-require golang.org/x/text v0.28.0 // indirect
+require (
+	github.com/samber/lo v1.52.0 // indirect
+	golang.org/x/text v0.28.0 // indirect
+)

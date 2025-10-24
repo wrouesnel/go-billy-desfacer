@@ -2,12 +2,14 @@ package desfacer
 
 import (
 	"fmt"
+	"io/fs"
 	"os"
 	"path/filepath"
 
 	"github.com/go-git/go-billy/v6"
 	"github.com/go-git/go-billy/v6/helper/chroot"
 	"github.com/go-git/go-billy/v6/util"
+	"github.com/samber/lo"
 	"github.com/spf13/afero"
 )
 
@@ -103,7 +105,7 @@ func (f *FS) Join(elem ...string) string {
 }
 
 // ReadDir implements billy.Dir interface.
-func (f *FS) ReadDir(path string) ([]os.FileInfo, error) {
+func (f *FS) ReadDir(path string) ([]fs.DirEntry, error) {
 	d, err := f.a.Open(path)
 	if err != nil {
 		return nil, err
@@ -111,7 +113,14 @@ func (f *FS) ReadDir(path string) ([]os.FileInfo, error) {
 
 	defer d.Close()
 
-	return d.Readdir(0)
+	finfos, err := d.Readdir(0)
+	if err != nil {
+		return nil, err
+	}
+
+	return lo.Map(finfos, func(item os.FileInfo, index int) fs.DirEntry {
+		return &dentryShim{item}
+	}), nil
 }
 
 // MkdirAll implements billy.Dir interface.
