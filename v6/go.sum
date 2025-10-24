@@ -3,6 +3,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-git/go-billy/v6 v6.0.0-20251008191739-bf4aa134545f h1:iss9MnIWzj8RBqB1Wtq8AIvuMq0+cOq6u4Wo+Yj6dY8=
 github.com/go-git/go-billy/v6 v6.0.0-20251008191739-bf4aa134545f/go.mod h1:TpCYxdQ0tWZkrnAkd7yqK+z1C8RKcyjcaYAJNAcnUnM=
+github.com/go-git/go-billy/v6 v6.0.0-20251016063423-4289a4e54aa4 h1:xQLkKmWcw9n5CUkl//bKQB7SPWQbaoKSVnHXH9V8sg8=
+github.com/go-git/go-billy/v6 v6.0.0-20251016063423-4289a4e54aa4/go.mod h1:TpCYxdQ0tWZkrnAkd7yqK+z1C8RKcyjcaYAJNAcnUnM=
 github.com/kr/fs v0.1.0/go.mod h1:FFnZGqtBN9Gxj7eW1uZ42v5BccTP0vu6NEaFoC2HwRg=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/sftp v1.10.1/go.mod h1:lYOWFsE0bwd1+KfKJaKeuokY15vzFx25BLbzYYoAxZI=
